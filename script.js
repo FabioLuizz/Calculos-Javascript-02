@@ -1,27 +1,27 @@
 const students = [
   {
     name: 'Fabio',
-    provaOne: 10,
-    provaTwo: 9
+    testOne: 10,
+    testTwo: 9
   },
   {
     name: 'Junior',
-    provaOne: 8,
-    provaTwo: 9
+    testOne: 8,
+    testTwo: 9
   },
   {
     name: 'Izabeli',
-    provaOne: 6,
-    provaTwo: 7
+    testOne: 6,
+    testTwo: 7
   }
 ]
 
-function calcMedia(provaOne, provaTwo) {
-  return ((provaOne + provaTwo) / 2)
+function calcMedia(testOne, testTwo) {
+  return ((testOne + testTwo) / 2)
 }
 
 function messageMedia(student) {
-  return `A média do(a) aluno(a) ${student.name} é: ${calcMedia(student.provaOne, student.provaTwo)}`
+  return `A média do(a) aluno(a) ${student.name} é: ${calcMedia(student.testOne, student.testTwo)}`
 }
 
 function messageApproved(student) {
@@ -35,7 +35,7 @@ function messagemRepproved(student) {
 for(let student of students) {
   let studentMedia = messageMedia(student)
 
-  if (calcMedia(student.provaOne, student.provaTwo) >= 7) {
+  if (calcMedia(student.testOne, student.testTwo) >= 7) {
    alert(`${studentMedia} \n ${messageApproved(student)}`)
   } else {
     alert(`${studentMedia} \n ${messagemRepproved(student)}`)
