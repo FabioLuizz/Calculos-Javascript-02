@@ -3,16 +3,6 @@
 
 
 # 💻 Sobre o desafio
-
-Principais pontos abordados nesse desafio:
-
-- Estrutura de dados com objetos;
-- Estrutura de repetição;
-- Criação de funções;
-- Operadores comparativos;
-
-
-
 Nessa etapa, o desafio foi criar uma lista de **estudantes** e, cada estudante dentro dessa lista, deve conter os seguintes dados:
 
 - nome;
